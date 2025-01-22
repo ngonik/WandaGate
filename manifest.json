@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "WandaGateFilter",
+    "version": "1.4",
+    "permissions": ["storage"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
