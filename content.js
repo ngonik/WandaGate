@@ -1,5 +1,6 @@
 chrome.storage.sync.get("blockedNames", (data) => {
     const blockedNames = data.blockedNames || [];
+    const url = window.location.hostname;
     const elements = document.querySelectorAll("h1, h2, h3, p, span"); // Ajustar según el sitio web
 
     const siteConfig = {
